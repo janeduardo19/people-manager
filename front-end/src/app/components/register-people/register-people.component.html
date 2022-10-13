@@ -1,0 +1,96 @@
+<form [formGroup]="formPeople" (ngSubmit)="onSubmit()">
+
+  <div class="form-group">
+    <mat-form-field appearance="fill">
+      <mat-label>Nome</mat-label>
+      <input matInput placeholder="Nome"
+        class="form-control"
+        name="name" id="name"
+        formControlName="name"
+        required="true">
+    </mat-form-field>
+  </div>
+
+  <div class="form-group">
+    <mat-form-field appearance="fill">
+      <mat-label>CPF</mat-label>
+      <input matInput placeholder="CPF"
+        class="form-control"
+        name="cpf" id="cpf"
+        formControlName="cpf"
+        required="true"
+      >
+      <mat-hint>111.111.111-11</mat-hint>
+    </mat-form-field>
+  </div>
+
+  <div class="form-group">
+    <mat-form-field appearance="fill">
+      <mat-label>Data de Nascimento</mat-label>
+      <input matInput [matDatepicker]="picker"
+        readonly="false"
+        class="form-control"
+        name="birthDate" id="birthDate"
+        formControlName="birthDate"
+        required="true"
+      >
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker disabled="false"></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+  <ng-container formArrayName="phones">
+    <div *ngFor="let _ of phones.controls; index as i">
+      <ng-container [formGroupName]="i">
+        <div>
+          <mat-form-field appearance="fill">
+            <mat-label>Nome</mat-label>
+            <input matInput placeholder="Nome"
+              class="form-control"
+              name="name" id="name"
+              formControlName="phone_name"
+              required="true">
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="fill">
+            <mat-label>Telefone</mat-label>
+            <input matInput placeholder="Nome"
+              class="form-control"
+              name="number" id="number"
+              formControlName="phone_number"
+              required="true">
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="pat@example.com"
+              formControlName="phone_email"
+              name="phone_email" id="phone_email"
+              required="true"
+            >
+          </mat-form-field>
+        </div>
+      </ng-container>
+    </div>
+  </ng-container>
+
+  <button mat-raised-button
+    (click)="onSubmit"
+    class="btn btn-info"
+    style="margin-left: 10px"
+    color="primary"
+  >
+    Salvar
+  </button>
+  <button mat-raised-button
+    class="btn btn-info"
+    style="margin-left: 10px"
+    color="warn"
+  >
+    Cancelar
+  </button>
+
+</form>

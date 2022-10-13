@@ -1,0 +1,24 @@
+<h3>Update Room</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" required ngModel="person.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="cpf">date</label>
+      <input type="text" class="form-control"
+      id="cpf" required ngModel="person.cpf" name="cpf">
+    </div>
+
+    <div class="form-group">
+      <label for="birthDate">start Hour</label>
+      <input type="text" class="form-control"
+      id="birthDate" required ngModel="person.birthDate"
+      name="birthDate">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

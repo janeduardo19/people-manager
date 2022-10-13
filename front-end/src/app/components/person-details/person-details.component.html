@@ -1,0 +1,23 @@
+<h1>Detalhes</h1>
+
+<div><b>Nome: </b>{{ person.name }}</div>
+<div><b>CPF: </b> {{ person.cpf }}</div>
+<div><b>Data de Nascimento: </b> {{ person.birthDate }}</div>
+
+<table mat-table [dataSource]="phones" class="mat-elevation-z8">
+  <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns">
+    <th mat-header-cell *matHeaderCellDef>{{ column }}</th>
+    <td mat-cell *matCellDef="let element">{{ element[column] }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
+
+<button mat-raised-button (click)="goToRegister()" color="primary">
+  Cadastrar
+</button>
+
+<button mat-raised-button (click)="goToList()" color="primary">
+  Lista de Pessoas
+</button>

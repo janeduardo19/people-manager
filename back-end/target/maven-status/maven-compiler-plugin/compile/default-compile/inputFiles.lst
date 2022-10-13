@@ -1,0 +1,8 @@
+/home/jan/eclipse-workspace/managerapi/src/main/java/com/nexttech/managerapi/controller/PersonController.java
+/home/jan/eclipse-workspace/managerapi/src/main/java/com/nexttech/managerapi/repository/PersonRepository.java
+/home/jan/eclipse-workspace/managerapi/src/main/java/com/nexttech/managerapi/entity/Phone.java
+/home/jan/eclipse-workspace/managerapi/src/main/java/com/nexttech/managerapi/exception/ResourceNotFoundException.java
+/home/jan/eclipse-workspace/managerapi/src/main/java/com/nexttech/managerapi/exception/GlobalExceptionHandler.java
+/home/jan/eclipse-workspace/managerapi/src/main/java/com/nexttech/managerapi/entity/Person.java
+/home/jan/eclipse-workspace/managerapi/src/main/java/com/nexttech/managerapi/exception/ErrorDetails.java
+/home/jan/eclipse-workspace/managerapi/src/main/java/com/nexttech/managerapi/ManagerapiApplication.java

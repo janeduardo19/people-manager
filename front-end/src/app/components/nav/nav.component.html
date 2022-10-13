@@ -1,0 +1,35 @@
+<mat-sidenav-container class="nav-container">
+  <mat-sidenav
+    class="sidenav"
+    mode="side"
+    closed
+    fixedInViewport="true"
+    fixedTopGap="100"
+    #sidenav
+  >
+    <mat-list class="mat-list">
+      <a mat-list-item routerLink="/">
+        <i class="material-icons">add_reaction</i>
+        Cadastro
+      </a>
+      <a mat-list-item routerLink="/list-people">
+        <i class="material-icons">people</i>
+        Lista de Pessoas
+      </a>
+      <a mat-list-item routerLink="/update">
+        <i class="material-icons">people</i>
+        Atualizar Pessoa
+      </a>
+      <a mat-list-item href="">
+        <i class="material-icons">import_contacts</i>
+        Sobre o autor
+      </a>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <button mat-icon-button (click)="sidenav.toggle()" class="mat-nav-button">
+      <i class="material-icons">menu</i>
+    </button>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

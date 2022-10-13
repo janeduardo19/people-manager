@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.nexttech.managerapi.ManagerapiApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.511 s - in com.nexttech.managerapi.ManagerapiApplicationTests
