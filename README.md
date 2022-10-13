@@ -41,5 +41,5 @@ por favor entre em contato para conversarmos.
 </p>
 ## Instalação
 O projeto do back é feito com maven então é simples instalar todas as dependencias.
-Quanto ao projeto do angular eu excluir a pasta node_modules pra ficar mais leve e <br>compactei e exclui a pasta .angular. Então basta descompactar a pasta e rodar um npm install.<br>
+Quanto ao projeto do angular eu excluir a pasta node_modules pra ficar mais leve e <br>compactei e fiz um split da pasta .angular. Então basta descompactar a pasta e rodar um npm install.<br>
 Caso encontre problemas para rodar o projeto entre em contato que ajudarei.
