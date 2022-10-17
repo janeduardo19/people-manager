@@ -13,11 +13,11 @@
 - Maven
 - Postman
 ## Endpoints criados
-- Criar novo cadastro POST - localhost:8082/api/v1/people
-- Listar todas as pessoas GET - localhost:8082/api/v1/people
-- Buscar pessoa pelo ID GET - localhost:8082/api/v1/people/{person_id}
-- Atualizar uma sala pelo ID GET - localhost:8082/api/v1/people/{person_id}
-- Excluir uma sala pelo ID GET - localhost:8082/api/v1/people/{person_id}
+- Criar novo cadastro POST - localhost:8080/api/v1/people
+- Listar todas as pessoas GET - localhost:8080/api/v1/people
+- Buscar pessoa pelo ID GET - localhost:8080/api/v1/people/{person_id}
+- Atualizar uma sala pelo ID GET - localhost:8080/api/v1/people/{person_id}
+- Excluir uma sala pelo ID GET - localhost:8080/api/v1/people/{person_id}
 ## Sobre o projeto
 <p>
 Projeto de criação de um sistema para o cadastro e gerenciamento de pessoas e seus contatos. Este projeto serve como pratica no aprendizado<br>
